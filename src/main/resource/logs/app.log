@@ -1,0 +1,16 @@
+08:06:23.851 [main] INFO  parser.sax.SaxParser - Start parsing
+08:06:23.855 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+08:07:00.979 [main] INFO  parser.sax.SaxParser - Start parsing
+08:07:41.661 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+08:44:09.888 [main] INFO  parser.sax.SaxParser - Start parsing
+08:44:09.893 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+08:45:01.732 [main] INFO  parser.sax.SaxParser - Start parsing
+08:45:01.736 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+08:45:52.214 [main] INFO  parser.sax.SaxParser - Start parsing
+08:46:01.618 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+08:46:26.837 [main] INFO  parser.sax.SaxParser - Start parsing
+08:46:26.841 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+08:48:25.679 [main] INFO  parser.sax.SaxParser - Start parsing
+08:48:25.686 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+08:48:29.498 [main] INFO  parser.sax.SaxParser - Start parsing
+08:48:29.502 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully

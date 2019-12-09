@@ -10,11 +10,7 @@ public class XmlFields {
     public static final String AMOUNT_OF_DEPOSIT= "AmountOfDeposit";
     public static final String PROFITABILITY= "Profitability";
     public static final String TIME_CONSTRAINTS= "TimeConstraints";
-    public static final String POSTE_RESTANTE= "PosteRestante";
-    public static final String URGENT= "Urgent";
-    public static final String ESTIMATED= "Estimated";
-    public static final String FUNDED= "Funded";
-    public static final String SAVING= "Saving";
+    public static final String TYPE= "Type";
     public static final String ID= "id";
 
     private XmlFields() { }

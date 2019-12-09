@@ -31,8 +31,8 @@ public class SaxParserTest {
         expectedBank.setId(id);
         expectedBank.setType(type);
         SaxParser saxParser = new SaxParser();
-        List<Bank> candyList = saxParser.parse(FILE_PATH);
-        Bank actualCandy = candyList.get(0);
-        Assert.assertEquals(actualCandy, expectedBank);
+        List<Bank> bankList = saxParser.parse(FILE_PATH);
+        Bank actualBank = bankList.get(0);
+        Assert.assertEquals(actualBank, expectedBank);
     }
 }

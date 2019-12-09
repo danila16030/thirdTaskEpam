@@ -34,7 +34,7 @@ public class SaxHandler extends DefaultHandler {
             case XmlFields.BANK:
                 bank = new Bank();
                 bank.setId(Integer.parseInt(attributes.getValue(XmlFields.ID)));
-                bank.setType("Estimated");
+                bank.setType(attributes.getValue("Estimated"));
         }
     }
 
@@ -63,6 +63,9 @@ public class SaxHandler extends DefaultHandler {
                 break;
             case XmlFields.TIME_CONSTRAINTS:
                 bank.setTimeConstraints(Integer.parseInt(information));
+                break;
+            case XmlFields.TYPE:
+                bank.setType(information);
                 break;
         }
     }
