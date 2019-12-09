@@ -127,6 +127,7 @@ public class Bank {
                 ", profitability=" + profitability +
                 ", timeConstraints=" + timeConstraints +
                 ", type='" + type + '\'' +
+                ", id=" + id +
                 '}';
     }
 }
