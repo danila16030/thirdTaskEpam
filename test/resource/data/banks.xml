@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.learn.by/banks  banks.xsd">
 
 
-    <Bank id="1" Estimated="true">
+    <Bank id="1" Typer="Estimated">
         <Name>National</Name>
         <Country>Belarus</Country>
         <Depositor>Danila</Depositor>
@@ -15,7 +15,7 @@
         <TimeConstraints>15</TimeConstraints>
     </Bank>
 
-    <Bank id="2" Saving="true">
+    <Bank id="2" Typer="Saving">
         <Name>National</Name>
         <Country>USA</Country>
         <Depositor>Danila</Depositor>
@@ -26,7 +26,7 @@
     </Bank>
 
 
-    <Bank id="3" Urgent="true" >
+    <Bank id="3" Typer="PosteRestante" >
         <Name>National</Name>
         <Country>Ukraine</Country>
         <Depositor>Danila</Depositor>
@@ -37,7 +37,7 @@
     </Bank>
 
 
-    <Bank id="4" PosteRestante="true">
+    <Bank id="4" Typer="Funded">
         <Name>National</Name>
         <Country>Rus</Country>
         <Depositor>Danila</Depositor>

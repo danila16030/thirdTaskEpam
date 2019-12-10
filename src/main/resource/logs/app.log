@@ -1,12 +1,23 @@
-09:20:09.352 [main] INFO  parser.sax.SaxParser - Start parsing
-09:20:09.358 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
-09:49:02.346 [main] INFO  parser.sax.SaxParser - Start parsing
-09:49:02.349 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
-09:57:49.235 [main] INFO  parser.sax.SaxParser - Start parsing
-09:57:49.240 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
-09:58:00.820 [main] INFO  parser.sax.SaxParser - Start parsing
-09:58:00.827 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
-10:12:06.680 [main] INFO  parser.sax.SaxParser - Start parsing
-10:12:06.686 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
-10:18:05.199 [main] INFO  parser.sax.SaxParser - Start parsing
-10:18:05.205 [main] INFO  parser.sax.SaxParser - Xml document is parsed successfully
+13:56:11.530 [main] INFO  parser.stax.StaxParser - Start parsing StAX
+13:56:11.537 [main] INFO  parser.stax.StaxParser - Xml document is parsed successfully by StAX
+13:56:23.861 [main] INFO  parser.stax.StaxParser - Start parsing StAX
+13:56:59.034 [main] INFO  parser.stax.StaxParser - Start parsing StAX
+13:58:49.902 [main] INFO  parser.stax.StaxParser - Start parsing StAX
+13:58:49.908 [main] INFO  parser.stax.StaxParser - Xml document is parsed successfully by StAX
+14:00:07.206 [main] INFO  parser.stax.StaxParser - Start parsing StAX
+14:00:07.212 [main] INFO  parser.stax.StaxParser - Xml document is parsed successfully by StAX
+14:29:46.823 [main] INFO  parser.stax.StaxParser - Start parsing StAX
+14:29:46.831 [main] INFO  parser.stax.StaxParser - Xml document is parsed successfully by StAX
+14:29:49.179 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:30:01.904 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:30:17.954 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:31:04.796 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:31:44.598 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:32:46.966 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:33:00.332 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:33:46.893 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:34:13.778 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:34:34.572 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:34:36.934 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:35:21.109 [main] INFO  parser.sax.SaxParser - Start parsing Sax
+14:36:48.089 [main] INFO  parser.sax.SaxParser - Start parsing Sax

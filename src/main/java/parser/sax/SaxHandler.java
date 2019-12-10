@@ -35,7 +35,7 @@ public class SaxHandler extends DefaultHandler {
                 bank = new Bank();
                 bank.setId(Integer.parseInt(attributes.getValue(XmlFields.ID)));
                 bank.setType(attributes.getValue(XmlFields.TYPE));
-               // bank.setType(attributes.getValue("Estimated"));
+                break;
         }
     }
 

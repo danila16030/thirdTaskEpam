@@ -1,15 +1,15 @@
-package test.epam.thirdtask.parser.sax;
+package test.epam.thirdtask.parser.stax;
 
 import entity.Bank;
 import exeption.ParserException;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import parser.sax.SaxParser;
+import parser.stax.StaxParser;
 
 import java.util.List;
 
-public class SaxParserTest {
+public class StaxParserTest {
     private static final String FILE_PATH = "test\\resource\\data\\banks.xml";
 
     @DataProvider(name = "data")
@@ -30,8 +30,8 @@ public class SaxParserTest {
         expectedBank.setTimeConstraints(timeConstraints);
         expectedBank.setId(id);
         expectedBank.setType(type);
-        SaxParser saxParser = new SaxParser();
-        List<Bank> bankList = saxParser.parse(FILE_PATH);
+        StaxParser staxParser = new StaxParser();
+        List<Bank> bankList = staxParser.parse(FILE_PATH);
         Bank actualBank = bankList.get(0);
         Assert.assertEquals(actualBank, expectedBank);
     }
