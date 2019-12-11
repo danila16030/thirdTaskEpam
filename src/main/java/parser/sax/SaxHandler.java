@@ -15,18 +15,19 @@ public class SaxHandler extends DefaultHandler {
     private static Logger logger = LogManager.getLogger(SaxHandler.class);
     private List<Bank> bankList;
     private Bank bank;
-    private String information = null;
+    private StringBuilder information;
 
     public List<Bank> getBankList() {
         return bankList;
     }
 
     public void characters(char[] ch, int start, int length) {
-        information = String.copyValueOf(ch, start, length).trim();//trim-удалляет пробелы в начале и конце строки
+        information.append(ch, start, length);
     }
 
     public void startElement(String uri, String localName, String qName,
                              Attributes attributes) {
+        information=new StringBuilder();
         switch (qName) {
             case XmlFields.BANKS:
                 bankList = new ArrayList<>();
@@ -45,25 +46,25 @@ public class SaxHandler extends DefaultHandler {
                 bankList.add(bank);
                 break;
             case XmlFields.NAME:
-                bank.setName(information);
+                bank.setName(information.toString());
                 break;
             case XmlFields.COUNTRY:
-                bank.setCountry(information);
+                bank.setCountry(information.toString());
                 break;
             case XmlFields.DEPOSITOR:
-                bank.setDepositor(information);
+                bank.setDepositor(information.toString());
                 break;
             case XmlFields.ACCOUNT_ID:
-                bank.setAccountId(Integer.parseInt(information));
+                bank.setAccountId(Integer.parseInt(information.toString()));
                 break;
             case XmlFields.AMOUNT_OF_DEPOSIT:
-                bank.setAmountOfDeposit(Integer.parseInt(information));
+                bank.setAmountOfDeposit(Integer.parseInt(information.toString()));
                 break;
             case XmlFields.PROFITABILITY:
-                bank.setProfitability(Float.parseFloat(information));
+                bank.setProfitability(Float.parseFloat(information.toString()));
                 break;
             case XmlFields.TIME_CONSTRAINTS:
-                bank.setTimeConstraints(Integer.parseInt(information));
+                bank.setTimeConstraints(Integer.parseInt(information.toString()));
                 break;
         }
     }

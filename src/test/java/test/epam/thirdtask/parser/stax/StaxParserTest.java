@@ -1,4 +1,4 @@
-package test.epam.thirdtask.parser.stax;
+package java.test.epam.thirdtask.parser.stax;
 
 import entity.Bank;
 import exeption.ParserException;
@@ -10,11 +10,11 @@ import parser.stax.StaxParser;
 import java.util.List;
 
 public class StaxParserTest {
-    private static final String FILE_PATH = "test\\resource\\data\\banks.xml";
+    private static final String FILE_PATH = "src\\test\\resource\\data\\banks.xml";
 
     @DataProvider(name = "data")
     public Object[][] createData() {
-        return new Object[][]{{"National", "Belarus", "Danila", "Estimated", 1234, 12365, 1.0, 15, 1}};
+        return new Object[][]{{"National\n            Bank USA", "Belarus", "Danila", "Estimated", 1234, 12365, 1.0, 15, 1}};
     }
 
     @Test(dataProvider = "data")

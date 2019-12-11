@@ -18,7 +18,7 @@ public class StaxParser {
     private List<Bank> bankList;
     private XMLInputFactory xmlInputFactory;
     private XMLStreamReader xmlStreamReader;
-    private String information;
+    private StringBuilder information;
     private Bank bank;
 
     public List<Bank> parse(String filePath) throws ParserException {
@@ -30,13 +30,14 @@ public class StaxParser {
                 int eventType = xmlStreamReader.next();
                 switch (eventType) {
                     case XMLStreamReader.START_ELEMENT:
+                        information=new StringBuilder();
                         startElement(xmlStreamReader);
                         break;
                     case XMLStreamReader.END_ELEMENT:
                         endElement(xmlStreamReader);
                         break;
                     case XMLStreamReader.CHARACTERS:
-                        information = xmlStreamReader.getText().trim();
+                        information.append(xmlStreamReader.getText());
                         break;
                 }
             }
@@ -66,25 +67,25 @@ public class StaxParser {
                 bankList.add(bank);
                 break;
             case XmlFields.NAME:
-                bank.setName(information);
+                bank.setName(information.toString());
                 break;
             case XmlFields.COUNTRY:
-                bank.setCountry(information);
+                bank.setCountry(information.toString());
                 break;
             case XmlFields.DEPOSITOR:
-                bank.setDepositor(information);
+                bank.setDepositor(information.toString());
                 break;
             case XmlFields.ACCOUNT_ID:
-                bank.setAccountId(Integer.parseInt(information));
+                bank.setAccountId(Integer.parseInt(information.toString()));
                 break;
             case XmlFields.AMOUNT_OF_DEPOSIT:
-                bank.setAmountOfDeposit(Integer.parseInt(information));
+                bank.setAmountOfDeposit(Integer.parseInt(information.toString()));
                 break;
             case XmlFields.PROFITABILITY:
-                bank.setProfitability(Float.parseFloat(information));
+                bank.setProfitability(Float.parseFloat(information.toString()));
                 break;
             case XmlFields.TIME_CONSTRAINTS:
-                bank.setTimeConstraints(Integer.parseInt(information));
+                bank.setTimeConstraints(Integer.parseInt(information.toString()));
                 break;
         }
     }

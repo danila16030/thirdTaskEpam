@@ -5,7 +5,8 @@
        xsi:schemaLocation="http://www.learn.by/banks  banks.xsd">
 
 
-    <Bank id="1" Type="Estimated">
+
+    <Bank id="1">
         <Name>National</Name>
         <Country>Belarus</Country>
         <Depositor>Danila</Depositor>

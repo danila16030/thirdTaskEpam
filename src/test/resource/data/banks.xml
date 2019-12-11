@@ -6,7 +6,8 @@
 
 
     <Bank id="1" Type="Estimated">
-        <Name>National</Name>
+        <Name>National
+            Bank USA</Name>
         <Country>Belarus</Country>
         <Depositor>Danila</Depositor>
         <AccountId>1234</AccountId>
@@ -26,7 +27,7 @@
     </Bank>
 
 
-    <Bank id="3" Type="PosteRestante" >
+    <Bank id="3" Type="PosteRestante">
         <Name>National</Name>
         <Country>Ukraine</Country>
         <Depositor>Danila</Depositor>
@@ -46,7 +47,6 @@
         <Profitability>0.98</Profitability>
         <TimeConstraints>1</TimeConstraints>
     </Bank>
-
 
 
 </Banks>
