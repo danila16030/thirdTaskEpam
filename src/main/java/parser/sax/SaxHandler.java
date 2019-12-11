@@ -7,7 +7,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 import parser.field.XmlFields;
 
-import javax.xml.namespace.QName;
+
 import java.util.ArrayList;
 import java.util.List;
 

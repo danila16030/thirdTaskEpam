@@ -22,10 +22,8 @@ public class SaxParser {
         try {
             SAXParser saxParser = SAXParserFactory.newInstance().newSAXParser();
             SaxHandler saxHandler = new SaxHandler();
-            if (saxHandler != null) {
-                saxParser.parse(filePath, saxHandler);
-                bankList = saxHandler.getBankList();
-            }
+            saxParser.parse(filePath, saxHandler);
+            bankList = saxHandler.getBankList();
         } catch (ParserConfigurationException | IOException | SAXException e) {
             throw new ParserException(e.getMessage(),e.getCause());
         }
