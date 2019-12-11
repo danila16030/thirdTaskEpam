@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.learn.by/banks"
+           elementFormDefault="qualified">
+    <xs:element name="Banks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Bank" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Country" type="xs:string"/>
+                            <xs:element name="Depositor" type="xs:string"/>
+                            <xs:element name="AccountId" type="xs:int"/>
+                            <xs:element name="AmountOfDeposit" type="xs:int"/>
+                            <xs:element name="Profitability" type="xs:double"/>
+                            <xs:element name="TimeConstraints" type="xs:int"/>
+                        </xs:sequence>
+                        <xs:attribute name="Type" type="typ"/>
+                        <xs:attribute name="id" type="xs:int"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="typ">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PosteRestante"/>
+            <xs:enumeration value="Urgent"/>
+            <xs:enumeration value="Estimated"/>
+            <xs:enumeration value="Funded"/>
+            <xs:enumeration value="Saving"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

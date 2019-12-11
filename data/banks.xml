@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.learn.by/banks"
+       xsi:schemaLocation="http://www.learn.by/banks  banks.xsd">
+
+
+    <Bank id="1" Type="Estimated">
+        <Name>National</Name>
+        <Country>Belarus</Country>
+        <Depositor>Danila</Depositor>
+        <AccountId>1234</AccountId>
+        <AmountOfDeposit>12365</AmountOfDeposit>
+        <Profitability>1.0</Profitability>
+        <TimeConstraints>15</TimeConstraints>
+    </Bank>
+
+    <Bank id="2" Type="Saving">
+        <Name>National</Name>
+        <Country>USA</Country>
+        <Depositor>Danila</Depositor>
+        <AccountId>9876</AccountId>
+        <AmountOfDeposit>12</AmountOfDeposit>
+        <Profitability>1.98</Profitability>
+        <TimeConstraints>8</TimeConstraints>
+    </Bank>
+
+
+    <Bank id="3" Type="PosteRestante" >
+        <Name>National</Name>
+        <Country>Ukraine</Country>
+        <Depositor>Danila</Depositor>
+        <AccountId>756</AccountId>
+        <AmountOfDeposit>1</AmountOfDeposit>
+        <Profitability>99</Profitability>
+        <TimeConstraints>12</TimeConstraints>
+    </Bank>
+
+
+    <Bank id="4" Type="Funded">
+        <Name>National</Name>
+        <Country>Rus</Country>
+        <Depositor>Danila</Depositor>
+        <AccountId>9756</AccountId>
+        <AmountOfDeposit>471</AmountOfDeposit>
+        <Profitability>0.98</Profitability>
+        <TimeConstraints>1</TimeConstraints>
+    </Bank>
+
+
+
+</Banks>
