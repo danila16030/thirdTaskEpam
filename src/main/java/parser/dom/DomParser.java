@@ -53,7 +53,7 @@ public class DomParser {
                 this.bankList.add(bank);
             }
         } catch (ParserConfigurationException | IOException | SAXException e) {
-            e.printStackTrace();
+            throw new ParserException(e.getMessage(),e.getCause());
         }
 
         return bankList;

@@ -41,7 +41,7 @@ public class StaxParser {
                 }
             }
         } catch (XMLStreamException e) {
-            e.printStackTrace();
+            throw new ParserException(e.getMessage(),e.getCause());
         }
         logger.info("Xml document is parsed successfully by StAX");
         return this.bankList;
