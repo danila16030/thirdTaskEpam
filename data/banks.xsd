@@ -12,7 +12,7 @@
                             <xs:element name="Name" type="xs:string"/>
                             <xs:element name="Country" type="xs:string"/>
                             <xs:element name="Depositor" type="xs:string"/>
-                            <xs:element name="AccountId" type="xs:int"/>
+                            <xs:element name="AccountId" type="xs:int" default="0000"/>
                             <xs:element name="AmountOfDeposit" type="xs:int"/>
                             <xs:element name="Profitability" type="xs:double"/>
                             <xs:element name="TimeConstraints" type="xs:int"/>

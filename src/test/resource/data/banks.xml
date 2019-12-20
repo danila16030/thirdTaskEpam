@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.learn.by/banks  banks.xsd">
 
 
-    <Bank id="1" Type="Estimated">
+    <Bank id="0" Type="Estimated">
         <Name>National
             Bank USA</Name>
         <Country>Belarus</Country>
